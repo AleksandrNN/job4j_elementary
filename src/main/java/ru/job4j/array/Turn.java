@@ -6,9 +6,6 @@ public class Turn {
             int temp = array[index];
             array[index] = array[array.length - index - 1];
             array[array.length - index - 1] = temp;
-            if (array[index] > array[array.length - index - 1]) {
-                break;
-            }
         }
         return array;
     }

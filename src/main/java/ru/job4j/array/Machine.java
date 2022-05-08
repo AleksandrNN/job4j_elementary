@@ -9,11 +9,11 @@ public class Machine {
         int size = 0;
         int sum = money - price;
         if (money > price) {
-            for (int i = 0; i < coins.length; i++) {
-                while (coins[i] <= sum) {
-                    sum = sum - coins[i];
-                    rsl[size] = coins[i];
-                    size = size + 1;
+            for (int coin : coins) {
+                while (coin <= sum) {
+                    sum = sum - coin;
+                    rsl[size] = coin;
+                    size++;
                 }
             }
         }
